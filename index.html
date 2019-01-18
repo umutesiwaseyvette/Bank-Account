@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    
+    <title>BANK ACCOUNT</title>
+</head>
+<body>
+    <div class="container">
+            <h1 class="jumbotron">Bank Account</h1>
+            <div class="well">
+              
+    <div class="row panel panel-info">
+            <div class="col-md-6">  
+        <h2>Create a new account</h2>
+        <form id="new-contact"></form>
+        <div class="form-group">
+        <label for="new-first-name">First Name</label>
+        <input type="text" class="form-control" id="new-first-name">
+        </div>
+        <div class="form-group">
+        <label for="new-last-name">Last Name</label>
+        <input type="text" class="form-control" id="new-last-name">
+        </div>
+        <div class="form-group">
+        <label for="new-nationality">Nationality</label>
+        <input type="text" class="form-control" id="new-nationality">
+    </div>
+    <div class="form-group">
+        <label for="new-city">City</label>
+        <input type="text" class="form-control" id="new-city">
+    </div>
+    <div class="form-group">
+        <label for="new-street">Street</label>
+        <input type="text" class="form-control" id="new-street">
+    </div>
+    <div class="form-group">
+            <label for="new-initial-amount">Street</label>
+            <input type="text" class="form-control" id="new-initial-amount">  
+    </div>
+
+        <button type="submit" class="btn">Create</button>
+        </form>
+    </div>
+    </div>
+        </div>
+    </div>
+</form>
+</div>
+<div class="col-md-6">
+  <h2>Deposit or Withdraw Funds:</h2>
+  <form id="form-balance" class="mod-form">
+    <div class="mod-div">
+      <label for="input-deposit">Deposit: </label>
+      <input id="input-deposit"type="number"min="0"step="0.01">
+    </div>
+    <div class="mod-div">
+      <label for="input-withdraw">Withdraw: </label>
+      <input id="input-withdraw"type="number"min="0"step="0.01">
+    </div>
+    <div class="mod-div">
+      <button type="submit" class="btn btn-success">Confirm</button>
+    </div>
+  </form>
+</div>
+</div>
+<div id="account-info" class="row panel panel-info">
+<div class="col-md-6">
+  <h2>Current Balance:</h2>
+  <p><span class="output-balance"></span></p>
+</div>
+</div>
+</div>
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/scripts.js"></script>   
+</body>
+</html>

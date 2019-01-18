@@ -59,5 +59,5 @@ $(function(){
   
   function formatRWF(tempString)
   {
-    return tempString.toLocaleString('en-rw',{style: 'currency', currency: 'RWF'});
+    return tempString.toLocaleString('en-RWF',{style: 'currency', currency: 'RWF'});
   }
